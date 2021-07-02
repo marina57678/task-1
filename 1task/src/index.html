@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task1</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/src/css/form.css">
+</head>
+<body>
+	<head></head>
+	<main>
+		<div class="renote"></div>
+		<div class= "form-note">
+			<form action="" id="form-note" class= "form-note-body" >
+				<textarea name="comment" cols="40" rows="10" class="form__content _req _content"></textarea>
+				<div class="type">
+					<div class="type-1">
+						<input id="form-radio-1" name="type" type="radio" value="task">
+						<label for="form-radio-1">Задача</label>
+					</div>
+					<div  class="type-2">
+						<input id="form-radio-2" name="type" type="radio" value="random">
+						<label for="form-radio-2">Случайная мысль</label>
+					</div> 
+					<div  class="type-3">
+						<input id="form-radio-3" name="type" type="radio" value="idea" checked>
+						<label  for="form-radio-3">Идея</label>
+					</div>
+				</div>
+				<div class="submit">
+					<input type="submit" value="Отправить"  class="form__submit btn btn-re">
+					<input type="reset" value="Очистить" class=" btn btn-del">
+					<input type="button" value="Закрыть" class="form__close btn btn-arh ">
+				</div>
+			</form>
+		</div>
+		<div class="table-container">
+			<table class="table">
+				<tr>
+					<td class="table__text">Номер
+					</td>
+					<td  class="table__text">Время создания
+					</td>
+					<td  class="table__text">Содержимое</td>
+					<td  class="table__text" >Категория заметки</td>
+					<td  class="table__text" >Возможные даты</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn btn-add ">
+			<input type="submit" value="Добавить"  class="form__open-add btn btn-re" id="form__open-add">
+		</div>
+		<div class="table-container table-sum-container">
+			<table class="table table-sum">
+				<tr>
+					<td class="table__text type">Type
+					</td>
+					<td class="table__text active">Активные 
+					</td>
+					<td class="table__text arh">Заархивированные</td>
+				</tr>
+				<tr class="idea-stat">
+					<td class="table__text">idea
+					</td>
+					<td class="table__text idea-stat-active">0
+					</td>
+					<td class="table__text idea-stat-arh">0</td>
+				</tr>
+				<tr class="random-stat">
+					<td class="table__text ">random
+					</td>
+					<td class="table__text random-stat-active">0 
+					</td>
+					<td class="table__text random-stat-arh">0</td>
+				</tr>
+				<tr class="task-stat">
+					<td class="table__text">task
+					</td>
+					<td class="table__text task-stat-active"> 0
+					</td>
+					<td class="table__text task-stat-arh">0</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn btn-open-arh ">
+			<input type="button" value="Архив"  class="table__open-arh btn btn-re" id="form__open-arh">
+		</div>
+		<div class="table-container table-arh-container">
+			<table class="table table-arh">
+				<tr>
+					<td class="table__text">Номер
+					</td>
+					<td class="table__text" >Время создания
+					</td>
+					<td class="table__text" >Содержимое</td>
+					<td class="table__text" >Категория заметки</td>
+					<td class="table__text" >Возможные даты</td>
+				</tr>
+			</table>
+		</div>
+		<!-- <div class="submit">
+			<input type="button" value="Удалить"  id="delete-row">
+			<input type="reset" value="Очистить">
+		</div>  -->
+		<!-- <form action="" id="form-renote">
+			<textarea name="recomment" cols="40" rows="10" class="form__recontent _req _content"></textarea>
+			<div class="submit">
+				<input type="submit" value="Отправить"  class="form__resubmit">
+				<input type="button" value="выйти">
+			</div>
+			</form> -->
+	</main>
+	<footer></footer>
+	<script src="/src/js/note.js"></script>
+	<script src="/src/js/openAddForm.js"></script>
+</body>
+</html>
